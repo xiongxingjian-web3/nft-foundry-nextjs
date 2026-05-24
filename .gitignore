@@ -4,11 +4,6 @@
 !.env.example
 !.env*.example
 
-# ========== 本地教学与 AI 辅助文档（不上传） ==========
-**/零基础教学.md
-foundry-nft-ui/AGENTS.md
-foundry-nft-ui/CLAUDE.md
-
 # ========== Foundry 构建产物与部署记录 ==========
 foundry-nft/cache/
 foundry-nft/out/

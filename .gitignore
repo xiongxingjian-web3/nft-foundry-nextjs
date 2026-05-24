@@ -1,0 +1,36 @@
+# ========== 敏感信息 / 环境变量 ==========
+.env
+.env.*
+!.env.example
+!.env*.example
+
+# ========== 本地教学与 AI 辅助文档（不上传） ==========
+**/零基础教学.md
+foundry-nft-ui/AGENTS.md
+foundry-nft-ui/CLAUDE.md
+
+# ========== Foundry 构建产物与部署记录 ==========
+foundry-nft/cache/
+foundry-nft/out/
+foundry-nft/broadcast/
+foundry-nft/lib/
+
+# ========== Node / Next.js ==========
+foundry-nft-ui/node_modules/
+foundry-nft-ui/.next/
+foundry-nft-ui/out/
+foundry-nft-ui/build/
+foundry-nft-ui/.vercel/
+foundry-nft-ui/*.tsbuildinfo
+foundry-nft-ui/next-env.d.ts
+
+# ========== 系统与编辑器 ==========
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*

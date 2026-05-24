@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom Components for NFT UI */
+
+.nft-dashboard-container {
+  @apply relative min-h-screen bg-gray-50 flex flex-col items-center py-16 px-4;
+}
+
+.dashboard-wrapper {
+  @apply max-w-4xl w-full space-y-12;
+}
+
+.dashboard-header {
+  @apply text-center space-y-4 pt-8;
+}
+
+.nav-bar {
+  @apply absolute top-8 right-8 flex justify-end;
+}
+
+.connect-wallet-button {
+  @apply bg-black hover:bg-gray-800 text-white font-bold py-2.5 px-6 rounded-full shadow-lg transition-all active:scale-[0.98] flex items-center gap-2;
+}
+
+.dashboard-title {
+  @apply text-5xl font-extrabold text-gray-900 tracking-tight;
+}
+
+.dashboard-subtitle {
+  @apply text-xl text-gray-500 max-w-2xl mx-auto;
+}
+
+.grid-layout {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+}
+
+.section-container {
+  @apply space-y-6;
+}
+
+.section-title {
+  @apply text-2xl font-bold text-gray-800 flex items-center gap-2 ml-1;
+}
+
+.icon-badge-blue {
+  @apply p-2 bg-blue-100 text-blue-600 rounded-lg;
+}
+
+.icon-badge-purple {
+  @apply p-2 bg-purple-100 text-purple-600 rounded-lg;
+}
+
+.nft-card {
+  @apply bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-all hover:shadow-xl p-6;
+}
+
+.card-inner {
+  @apply relative;
+}
+
+.image-container {
+  @apply w-full h-64 bg-gray-50 rounded-xl flex items-center justify-center mb-6 overflow-hidden;
+}
+
+.placeholder-content {
+  @apply text-gray-400 flex flex-col items-center;
+}
+
+.placeholder-svg {
+  @apply w-20 h-20 mb-2;
+}
+
+.placeholder-text {
+  @apply text-sm font-medium;
+}
+
+.preview-image {
+  @apply w-[55%] h-full object-cover rounded-lg shadow-none;
+}
+
+.content-stack {
+  @apply space-y-4;
+}
+
+.card-title-group {
+  @apply flex justify-between items-center;
+}
+
+.card-title {
+  @apply text-xl font-bold text-gray-900;
+}
+
+.card-description {
+  @apply text-gray-500 text-sm mt-1;
+}
+
+.badge-happy {
+  @apply px-3 py-1 rounded-full text-xs font-bold uppercase bg-yellow-100 text-yellow-700;
+}
+
+.badge-sad {
+  @apply px-3 py-1 rounded-full text-xs font-bold uppercase bg-gray-100 text-gray-700;
+}
+
+.input-section {
+  @apply pt-2;
+}
+
+.input-label {
+  @apply block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all;
+}
+
+.input-field-purple {
+  @apply w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all;
+}
+
+.primary-button {
+  @apply w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl shadow-md transition-all active:scale-[0.98] 
+  /* 优化后的禁用样式 */
+  disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed disabled:shadow-none disabled:active:scale-100;
+}
+
+.mint-button {
+  @apply flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl shadow-md transition-all active:scale-[0.98] 
+  disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed disabled:shadow-none disabled:active:scale-100;
+}
+
+.flip-button {
+  @apply flex-1 bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-xl shadow-md transition-all active:scale-[0.98] 
+  disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed disabled:shadow-none disabled:active:scale-100;
+}
+
+.button-group {
+  @apply flex gap-3;
+}
+
+.footer-section {
+  @apply mt-12 text-center text-gray-400 text-sm border-t border-gray-200 pt-8;
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Dogie NFT",
+    "description": "This is a puppy NFT, 100% based on blockchain!",
+    "image": "ipfs://QmYx6GsYAKnNzZ9A6NvEKV9nf1VaDzJrqDR23Y8YSkebLU",
+    "attributes": [
+        {
+            "trait_type": "moodiness",
+            "value": 100
+        }
+    ]
+}

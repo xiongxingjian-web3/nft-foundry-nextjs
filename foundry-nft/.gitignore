@@ -1,0 +1,12 @@
+# Compiler files
+cache/
+out/
+
+# Deployment broadcast logs (may contain wallet addresses and tx data)
+/broadcast/
+
+# Docs
+docs/
+
+# Dotenv file
+.env
